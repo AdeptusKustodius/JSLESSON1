@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1. С помощью цикла while вывести все простые числа в промежутке от 0 до 100;
+    let i=1;
+    while(i<=100)
+    {
+        console.log(i++);
+    }
+    <script>
+        let i=1;
+        while(i<=100)
+        {
+            console.log(i++);
+        }
+    </script>
+
+<hr>
+2. С этого урока начинаем работать с функционалом интернет-магазина. Предположим, есть сущность корзины. Нужно реализовать функционал подсчета стоимости корзины в зависимости от находящихся в ней товаров.
+3. Товары в корзине хранятся в массиве. Задачи:
+a) Организовать такой массив для хранения товаров в корзине;
+b) Организовать функцию countBasketPrice, которая будет считать стоимость корзины.
+<blockquote>
+let arr1 = ['name1', 100]; // создается массив с именем и ценой 
+let arr2 = ['name2', 200];// создается массив с именем и ценой 
+let arr3 = ['name3', 300];// создается массив с именем и ценой 
+let arr4 = ['name4', 400];// создается массив с именем и ценой 
+
+
+function countBasketPrice(){ // создается функция с условием выполнения
+    let bascket = arr1[1]+arr2[1]+arr3[1]+arr4.pop(); // создается переменная с вызовом массивов с указанным индексом цены товара
+    console.log(bascket);// вывод полученного значения в консоль
+}
+countBasketPrice()// вызов функции
+</blockquote>
+<script>
+    let arr1 = ['name1', 100];
+    let arr2 = ['name2', 200];
+    let arr3 = ['name3', 300];
+    let arr4 = ['name4', 400];
+    
+
+    function countBasketPrice(){
+        let bascket = arr1[1]+arr2[1]+arr3[1]+arr4.pop();
+        console.log(bascket);
+    }
+    countBasketPrice()
+   
+</script>
+<hr>
+4) *Вывести с помощью цикла for числа от 0 до 9, не используя тело цикла. 
+for ( i=0; i<=9; console.log(i++)){}
+<script>
+    for ( i=0; i<=9; console.log(i++)){}
+</script>
+<hr>
+5) *Нарисовать пирамиду с помощью console.log, как показано на рисунке, только у вашей пирамиды должно быть 20 рядов, а не 5:
+<span>
+    let x = 'x';
+    for (i=1; i<20;){
+        console.log(x);
+        i++;
+        x = x+'x';    
+    }
+</span>
+
+
+<script>
+    let x = 'x';
+    for (i=1; i<20;){
+        console.log(x);
+        i++;
+        x = x+'x';    
+    }
+</script>
+<hr>
+
+
+</body>
+</html>
